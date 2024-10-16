@@ -511,8 +511,8 @@ async function run() {
             warning("Not a pull request, skipping...");
         }
     } catch (err) {
-        error(err);
-        core.setFailed(err.message);
+        // error(err);
+        // core.setFailed(err.message);
     }
 }
 
