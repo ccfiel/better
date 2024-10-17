@@ -17,6 +17,12 @@ const COMMON_SYSTEM_PROMPT = `
     Rest, **return everything as it is (in the same order)** along with your suggestions. Ignore formatting issues.
     IMPORTANT: 
     - Don't be lazy.
+    - Check the code for complexity, readability, maintainability, and security.
+    - Categorize the suggestions into the following categories:
+        - Code Quality
+        - Code Maintainability
+        - Code Readability
+        - Code Security
     - If something is deleted (type: "del"), compare it with what's added (type: "add") in place of it. If it's completely different, ignore the deleted part and give suggestions based on the added (type: "add") part.
     - If it's more appropriate to club the "add" parts together and then give suggestions, then do that. For example, if there are 3 "add" parts such as "function subtract(a, b) {", "return a - b;" and "}", then you can club them together and give suggestions.
     - Only modify/add the "suggestions" property (if required).
